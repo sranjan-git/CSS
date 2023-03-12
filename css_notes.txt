@@ -1,0 +1,18 @@
+Lec.20 (Absolute Positioning)
+=========== 
+parent div will be fixed where we have styled it to stay.
+Lec.21 (Fixed Positioning)
+========
+the selected parent doesn't move if position is set to fixed.
+Lec.23 (Z-Index)
+=========
+Determines the Z-index of an element
+
+Lec.25
+=======
+Styling links 
+Link states:
+Unvisited, Visited, Hover, Active.
+
+
+
