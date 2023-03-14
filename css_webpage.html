@@ -1,0 +1,207 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title> CSS Web Page </title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            line-height: 1.5em;
+        }
+
+        #header{
+            background: black;
+            font-family: Arial;
+            height: 100px;
+        }
+        #contentwrapper{
+            float: left;
+            width: 100%;
+        }
+
+        #contentcolumn{
+            margin: 0 230px 0 230px;
+        }
+
+        #leftcolumn{
+            float: left;
+            width: 230px;
+            margin-left: -100%;
+            background: #24CBFF;
+        }
+
+        #rightcolumn{
+            float: left;
+            width: 230px;
+            margin-left: -230px;
+            background: #FFFB00;
+        }
+
+        .innertext{
+            margin: 20px;
+            font-family: Arial;
+            color: #5E5E5E;
+        }
+
+        #footer{
+            clear: left;
+            width: 100%;
+            background: black;
+            color: #FFF;
+            font-family: Arial;
+            text-align: center;
+            padding: 4px;
+
+        }
+
+        /*Navigation Bar*/
+
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+
+        li{
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        li :last-child{
+            border-right: none;
+        }
+
+        li a{
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active){
+            background-color: #808080;
+        }
+
+        /*Responsive Layout CSS*/
+        @media (max-width: 840px){ /*Drop right column down*/
+        #leftcolumn{
+            margin-left: -100%;
+
+        }
+
+        #rightcolumn{
+            float: none;
+            width: 100%;
+            margin-left: 0;
+            clear: both;
+
+        }
+
+        #contentcolumn{
+            margin-right: 0;
+        }
+
+    }
+
+    @media (max-width: 600px){/*Drop left Column Down*/
+
+        #leftcolumn{
+            float: none;
+            width: 100%;
+            margin-left: 0;
+            clear: both;
+        }
+
+        #contentcolumn{
+            margin-left: 0;
+        }
+    }
+
+    </style>
+    </head>
+
+    <body>
+    <div id="container"></div>
+        <div id="header">
+            <ul style="display: inline;">
+                <li> <a class="active" href="#Home">Home</a></li>
+                <li> <a class="active" href="#news">About</a></li>
+                <li> <a class="active" href="#contact">News</a></li>
+                <li> <a class="active" href="#about">Contact</a></li>
+            </ul>
+        </div>
+
+        <div id="contentwrapper">
+            <div id="contentcolumn">
+                <div class="innertext">
+
+                    <b>Welcome!</b> <br> Hello!
+                    My name is Sudhanshu Ranjan
+                    I am a third year penchant,
+                    from Patna, Bihar.
+                    Currently pursuing 
+                    my engineering degree
+                    with specialisation
+                    in cyber security,
+                    however my interest lies 
+                    in development, under this 
+                    field I have done some 
+                    self made projects, few certifications,
+                    participated in conferences and 
+                    exploring various pathways.<br>
+                    Thank You!
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <div id="leftcolumn">
+            <div class="innertext">
+                <b>Left Column: <em>230px</em></b>
+                <br> Hello!
+                My name is Sudhanshu Ranjan
+                I am a third year penchant,
+                from Patna, Bihar.
+                Currently pursuing 
+                my engineering degree
+                with specialisation
+                in cyber security,
+                however my interest lies 
+                in development, under this 
+                field I have done some 
+                self made projects, few certifications,
+                participated in conferences and 
+                exploring various pathways.<br>
+                Thank You!
+                
+            </div>
+        </div>
+
+        <div id="rightcolumn">
+            <div class="innertext">
+                <b>Left Column: <em>230px</em></b>
+                <br> Hello!
+                My name is Sudhanshu Ranjan
+                I am a third year penchant,
+                from Patna, Bihar.
+                Currently pursuing 
+                my engineering degree
+                with specialisation
+                in cyber security,
+                however my interest lies 
+                in development, under this 
+                field I have done some 
+                self made projects, few certifications,
+                participated in conferences and 
+                exploring various pathways.<br>
+                Thank You!
+                
+            </div>
+        </div>
+
+        <div id="footer">Footer</div>
+    </body>
+</html>
